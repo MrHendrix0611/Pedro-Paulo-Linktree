@@ -1,0 +1,219 @@
+/* BASE */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F5F7F8;
+  color: #1F1F1F;
+  margin: 0;
+  padding: 0;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* SOBRE */
+.about {
+  background-color: #FFFFFF;
+}
+
+.author-photo img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #A9DCE3;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+.author-photo img:hover{
+  transform: scale(1.3);
+}
+
+.author-info h2 {
+  font-size: 28px;
+  color: #4FA3B5;
+  margin-bottom: 25px;
+}
+
+.author-info p {
+  text-align: justify;
+  font-size: 16px;
+  margin-bottom: 12px;
+  line-height: 1.7;
+  color: #6E6E6E;
+}
+
+/* SERVIÇOS */
+.services {
+  background-color: #A9DCE3;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.services-title {
+  font-size: 32px;
+  margin-bottom: 45px;
+  color: #1F1F1F;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service-card {
+  background-color: #FFFFFF;
+  padding: 28px 22px;
+  border-radius: 14px;
+  width: 260px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+}
+
+.service-card h3 {
+  color: #4FA3B5;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  font-size: 14px;
+  margin-bottom: 22px;
+  color: #6E6E6E;
+}
+
+.service-card a {
+  display: inline-block;
+  background-color: #6BBEC9;
+  color: #FFFFFF;
+  padding: 10px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.service-card a:hover {
+  background-color: #4FA3B5;
+}
+
+/* LIVRO */
+.book {
+  padding: 70px 20px;
+  background-color: #F5F7F8;
+}
+
+.book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+.book-cover img {
+  width: 300px;
+  height: auto;
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.2));
+}
+
+.book-description {
+  max-width: 600px;
+  text-align: justify;
+}
+
+.book-description h2 {
+  font-size: 26px;
+  margin-bottom: 18px;
+  color: #4FA3B5;
+}
+
+.book-description p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #6E6E6E;
+}
+
+/* ENTREVISTAS */
+.interviews {
+  background-color: #24363B;
+  color: #FFFFFF;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.interviews-title {
+  font-size: 32px;
+  margin-bottom: 45px;
+}
+
+.interviews-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.interview-card {
+  background-color: #2F4B52;
+  padding: 25px 20px;
+  border-radius: 14px;
+  width: 260px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.interview-cover {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.interview-card p {
+  font-size: 14px;
+  margin-bottom: 18px;
+  color: #E6F4F6;
+}
+
+.interview-card a {
+  display: inline-block;
+  background-color: #6BBEC9;
+  color: #FFFFFF;
+  padding: 10px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.interview-card a:hover {
+  background-color: #4FA3B5;
+}
+
+/* RESPONSIVO */
+@media (min-width: 768px) {
+  .book-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .book-description {
+    text-align: left;
+  }
+}

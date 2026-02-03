@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Paulo | Psicólogo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/lamp.png">
+</head>
+<body>
+  <button id="themeToggle" class="theme-toggle">
+    <img src="img/idea.png" alt="Alterar tema">
+  </button>
+  <script>
+    const toggleBtn = document.getElementById('themeToggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+
+  <div class="container">
+    <div class="profile">
+      <img src="img/perfil.jpeg" alt="Foto de perfil" class="avatar">
+      <h1>Pedro Paulo | Psicólogo</h1>
+      <p class="subtitle"><b><i>"Só porque você pensa algo não significa, necessáriamente, que seja verdade"</i></b> — Beck Institute for Cognitive Behaviour Therapy 2021</p>
+    </div>
+
+    <div class="links">
+      <a href="about.html" class="link-button">
+        <img src="img/icon1.png" alt="Ícone" class="icon"> Quem eu sou?
+      </a>
+      <a href="about.html#services" class="link-button">
+        <img src="img/icon2.png" alt="Ícone" class="icon"> Meus serviços
+      </a>
+    </div>
+
+    <footer>
+      <div class="social-icons">
+        <a href="https://wa.me/5511957985177" target="_blank">
+          <img src="img/whatsapp.png" alt="WhatsApp">
+        </a>
+        <a href="https://www.instagram.com/phetraeus.psi?igsh=aWh5ejFrbmR4Z2c2&utm_source=qr" target="_blank">
+          <img src="img/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.tiktok.com/@psignificativo?_r=1&_t=ZS-93XYsxuGowU" target="_blank">
+          <img src="img/tiktok.png" alt="TikTok">
+        </a>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
