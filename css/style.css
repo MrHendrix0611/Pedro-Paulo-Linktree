@@ -28,7 +28,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 12px;
-  border: 3px solid #A9DCE3;
+  border: 3px solid #5398F4;
 }
 
 .avatar:hover{
@@ -37,7 +37,7 @@ body {
 
 .profile h1 {
   margin: 0;
-  color: #4FA3B5;
+  color: #5398F4;
   font-size: 20px;
 }
 
@@ -55,7 +55,7 @@ body {
 }
 
 .link-button {
-  background-color: #A9DCE3;
+  background-color: #9BC6FA;
   border-radius: 24px;
   padding: 15px 18px;
   display: flex;
@@ -69,7 +69,7 @@ body {
 }
 
 .link-button:hover {
-  background-color: #6BBEC9;
+  background-color: #5398F4;
   color: #FFFFFF;
 }
 
@@ -129,6 +129,10 @@ body.dark-mode .container {
 
 body.dark-mode .profile h1 {
   color: #6BBEC9;
+}
+
+body.dark-mode .profile .avatar{
+  border: 3px solid #6BBEC9;
 }
 
 body.dark-mode .subtitle {
